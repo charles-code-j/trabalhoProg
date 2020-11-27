@@ -11,6 +11,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UsuarioCadastroComponent } from './pages/usuario/usuario-cadastro/usuario-cadastro.component';
 import { MenuPrincipalComponent } from './pages/menu/menu-principal/menu-principal.component';
 import { AuthService } from './pages/usuario/auth.service';
+import { TutorialComponent } from './pages/tutorial/tutorial.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,11 @@ const routes: Routes = [
   {
     path:'sobre',
     component:SobreComponent,
+    canActivate: [AuthService]
+  },
+  {
+    path:'tutorial',
+    component:TutorialComponent,
     canActivate: [AuthService]
   },
   {

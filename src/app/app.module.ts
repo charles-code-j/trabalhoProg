@@ -30,6 +30,7 @@ import { AutorPesquisaComponent } from './pages/autor/autor-pesquisa/autor-pesqu
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { UsuarioPesquisaComponent } from './pages/usuario/usuario-pesquisa/usuario-pesquisa.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TutorialComponent } from './pages/tutorial/tutorial.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     AutorPesquisaComponent,
     SobreComponent,
     UsuarioPesquisaComponent,
+    TutorialComponent,
 
   ],
   imports: [
