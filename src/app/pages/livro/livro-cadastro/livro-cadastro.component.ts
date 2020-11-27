@@ -22,6 +22,7 @@ export class LivroCadastroComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
+      id: new FormControl(),
       nome:new FormControl(),
       genero:new FormControl()
     });

@@ -24,6 +24,7 @@ export class EditoraCadastroComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
+      id: new FormControl(),
       nome:new FormControl(),
       numeroObrasPublicada:new FormControl(),
       tipoEditora:new FormControl(),

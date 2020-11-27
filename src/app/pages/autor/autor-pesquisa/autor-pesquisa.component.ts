@@ -34,7 +34,7 @@ export class AutorPesquisaComponent implements OnInit {
   }
 
   public alterar(autor){
-    this.router.navigate(['autor/cadastro', autor])
+    this.router.navigate(['autor/cadastro', autor]);
   }
 
   public remover(autor){
