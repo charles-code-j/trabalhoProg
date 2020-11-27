@@ -1,0 +1,39 @@
+<mat-sidenav-container *ngIf="mostrar(); else teste" class="sidenav-container" >
+  <mat-sidenav #drawer class="sidenav" fixedInViewport>
+    <mat-toolbar >Livro</mat-toolbar>
+    <mat-nav-list >
+      <a mat-list-item  routerLink="livro/pesquisa">Pesquisa</a>
+      <a mat-list-item  routerLink="livro/cadastro">Cadastro</a>
+    </mat-nav-list>
+    <mat-toolbar>Editora</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item  routerLink="editora/pesquisa" >Pesquisa</a>
+      <a mat-list-item  routerLink="editora/cadastro">Cadastro</a>
+    </mat-nav-list>
+    <mat-toolbar>Autor</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item  routerLink="autor/pesquisa" >Pesquisa</a>
+      <a mat-list-item  routerLink="autor/cadastro">Cadastro</a>
+    </mat-nav-list>
+    <mat-toolbar >Sobre</mat-toolbar>
+    <mat-nav-list >
+      <a mat-list-item  routerLink="sobre">Informações</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class="spacer">Menu</span>
+      <mat-icon aria-label="Side nav toggle icon">perm_identity</mat-icon>
+      <a mat-raised-button color='accent' (click)="deslogar()" routerLink="login">Sair</a>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<ng-template #teste><router-outlet></router-outlet></ng-template>

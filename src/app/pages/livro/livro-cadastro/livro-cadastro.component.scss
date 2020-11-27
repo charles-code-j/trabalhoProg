@@ -1,0 +1,18 @@
+   button{
+    background: #55a8fd;
+    color: #ffffff;
+    }
+
+.mat-card {
+    background-color:#c9cdd154;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    margin: 70px;
+    border-radius: 10px;
+}
+
+.mat-card-header .mat-card-title {
+    margin-left: 480px;
+}

@@ -1,0 +1,22 @@
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            Login
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content >
+        <form class="example-form" fxLayout="column" >
+            <mat-form-field >
+                <input [(ngModel)]="usuario.login" matInput [ngModelOptions]="{standalone: true}" placeholder="Email"  type="text">
+            </mat-form-field>
+            <mat-form-field >
+                <input [(ngModel)]="usuario.senha" matInput [ngModelOptions]="{standalone: true}" placeholder="Senha" type="password">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button class="botaologin" mat-raised-button (click)="logar()">Logar</button>
+    </mat-card-actions>
+</mat-card>
+
